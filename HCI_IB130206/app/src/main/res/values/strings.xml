@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Cinema</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="signin">Sign-in</string>
+    <string name="signup">SIGN-UP</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_movies">MoviesActivity</string>
+    <string name="opi">opi</string>
+    <string name="title_activity_movie_details">Movie Details </string>
+    <string name="user_comments">User comments</string>
+    <string name="imdbo">IMDBO</string>
+    <string name="movie_title">Naziv</string>
+    <string name="ocjena">Ocjena</string>
+    <string name="description">Opis</string>
+    <string name="stars">Uloge</string>
+    <string name="title_activity_kino_home">KinoHomeActivity</string>
+    <string name="movies">Movies</string>
+    <string name="btn_projekcije">POGLEDAJ PROJEKCIJE</string>
+    <string name="btn_confirm_reservation">CONFIRM RESERVATION</string>
+    <string name="seat_reservation">Seat reservation</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password_repeate">Repeat password</string>
+    <string name="email">Email</string>
+    <string name="grendre">Grendre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_movie_projections">Movie Projections</string>
+    <string name="tagName">neki_tag</string>
+    <string name="btn_registration">CREATE</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="title_activity_movie_main">Movies main</string>
+    <string name="title_activity_main_movie">MainMovieActivity</string>
+    <string name="title_activity_sliding_menu">SlidingMenuActivity</string>
+    <string name="drawer_open">Otvoreno</string>
+    <string name="drawer_close">Zatvoreno</string>
+
+
+</resources>

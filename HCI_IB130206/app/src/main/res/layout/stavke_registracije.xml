@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/txt_shape"
+        android:hint="@string/username"
+        android:id="@+id/txtUsername"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/first_name"
+        android:id="@+id/txtFirstName"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/last_name"
+        android:background="@drawable/txt_shape"
+        android:id="@+id/txtLastName"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/email"
+        android:background="@drawable/txt_shape"
+        android:inputType="textEmailAddress"
+    android:id="@+id/txtEmail"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:background="@drawable/txt_shape"
+        android:id="@+id/txtPassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/password_repeate"
+        android:inputType="textPassword"
+        android:background="@drawable/txt_shape"
+        android:id="@+id/txtPasswordRepeate"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/gray"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_cancel"
+        android:padding="10dp"
+        android:id="@+id/btnCancel"/>/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_registration"
+            android:padding="10dp"
+            android:background="@color/gray"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnRegistration"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

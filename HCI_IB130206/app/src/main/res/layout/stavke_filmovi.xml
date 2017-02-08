@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Naziv filma:"
+        android:id="@+id/tvNaziv"
+        android:layout_toRightOf="@+id/frameMovie"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Users rate:"
+
+        android:id="@+id/tvOcjena"
+        android:layout_below="@+id/tvNaziv"
+        android:layout_toRightOf="@+id/frameMovie"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IMDb rate:"
+        android:id="@+id/tvImdbOcjena"
+        android:layout_below="@+id/tvOcjena"
+        android:layout_toRightOf="@+id/frameMovie"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Stars:"
+        android:id="@+id/tvStars"
+        android:layout_below="@+id/layoutRating"
+        android:layout_toRightOf="@+id/frameMovie"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutRating"
+        android:layout_toRightOf="@+id/frameMovie"
+        android:layout_below="@+id/tvImdbOcjena">
+
+    <RatingBar
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:id="@+id/ratingBar"
+        android:numStars="10"
+        android:layout_marginLeft="10dp"
+       android:stepSize="0.1"
+
+
+
+        />
+    </LinearLayout>
+
+
+
+
+
+
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:padding="3dp"
+    android:background="@color/black"
+    android:id="@+id/frameMovie">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:textColor="@color/white"
+        android:id="@+id/imageFilm"
+        android:contentDescription="@string/opi"
+        android:background="@color/black"
+
+        android:src="@mipmap/ic_launcher"/>
+</FrameLayout>
+
+
+</RelativeLayout>

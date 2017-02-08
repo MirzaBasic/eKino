@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Movies.Activitys.MovieDetailsActivity"
+    tools:showIn="@layout/activity_movie_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/scroll"
+    android:layout_height="wrap_content"
+
+    >
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+
+
+            android:background="@color/black"
+            android:id="@+id/imageFilmDetalji"
+
+
+
+
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageFilmDetalji"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Naziv Filma:"
+
+            android:id="@+id/tvNazivDetalji"
+            android:layout_below="@+id/imageFilmDetalji"
+            android:layout_gravity="center_horizontal" />
+
+
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="IDBM ocjena:"
+            android:id="@+id/tvIdbmOcjenaDetalji"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/btn_projekcije"
+          android:layout_alignParentRight="true"
+           android:id="@+id/btnProjections"
+           android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ocjena:"
+            android:id="@+id/tvOcjenaDetalji"
+            android:layout_below="@+id/tvIdbmOcjenaDetalji"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Zanrovi:"
+        android:id="@+id/tvZanrDetalji"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Kratak sadrzaj:"
+            android:id="@+id/tvKratakSadrzajDetalji"
+            android:layout_below="@+id/tvOcjenaDetalji"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_comments"
+            android:layout_below="@id/tvKratakSadrzajDetalji"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:id="@+id/tvUcitajKomentare"
+            android:textColor="@color/primary_text_default_material_light"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <com.example.mirza.hci_ib130206.Mod.NonScrollListView
+        android:layout_below="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listKomentariFilma"
+        android:dividerHeight="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+</LinearLayout>
+</ScrollView>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
